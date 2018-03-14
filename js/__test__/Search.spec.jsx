@@ -4,7 +4,7 @@ import preload from '../../data.json';
 import Search from '../Search';
 import ShowCard from '../ShowCard';
 
-const component = shallow(<Search />);
+const component = shallow(<Search shows={preload.shows} />);
 
 test('Search renders correctly', () => {
     expect(component).toMatchSnapshot();
